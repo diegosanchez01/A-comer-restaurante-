@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos - Restaurante A Comer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .hero-inicio {
+            background: linear-gradient(135deg, rgba(26, 32, 44, 0.85), rgba(178, 34, 34, 0.8)),
+            url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .contenido-inicio {
+            color: #ffffff;
+            max-width: 700px;
+        }
+
+        .contenido-inicio h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .btn-menu {
+            display: inline-block;
+            background-color: #b22222;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1rem 3rem;
+            border-radius: 40px;
+            box-shadow: 0 4px 15px rgba(178, 34, 34, 0.4);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-menu:hover {
+            background-color: #8b0000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(178, 34, 34, 0.6);
+        }
+
+        /* Adaptabilidad para móviles */
+        @media (max-width: 768px) {
+            .contenido-inicio h1 {
+                font-size: 2.5rem;
+            }
+            .btn-menu {
+                padding: 0.85rem 2.2rem;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero-inicio">
+    <div class="contenido-inicio">
+        <h1>Bienvenidos al Restaurante A Comer</h1>
+        <a href="index.html" class="btn-menu">Menú</a>
+    </div>
+</div>
+
+</body>
+</html>
